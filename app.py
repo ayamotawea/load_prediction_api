@@ -5,6 +5,7 @@ import os
 import uvicorn
 
 # Load model
+
 MODEL_PATH = os.path.join(os.getcwd(), "load_model.pkl")
 model = joblib.load(MODEL_PATH)
 
