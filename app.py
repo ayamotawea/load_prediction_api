@@ -5,6 +5,7 @@ import os
 import uvicorn
 
 # Load model
+
 model = joblib.load("load_model.pkl")
 
 # Input schema
