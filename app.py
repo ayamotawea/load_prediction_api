@@ -5,7 +5,7 @@ import os
 import uvicorn
 
 # Load model
-model = joblib.load("load_prediction_api/load_model.pkl")
+model = joblib.load("/load_model.pkl")
 
 # Input schema
 class LoadInput(BaseModel):
