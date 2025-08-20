@@ -9,7 +9,7 @@ from pydantic import BaseModel
 import joblib
 
 # Load your model
-model = joblib.load("load_model.pkl")
+model = joblib.load("load_prediction_api/load_model.pkl")
 
 # Input schema
 class LoadInput(BaseModel):
