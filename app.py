@@ -37,4 +37,10 @@ def predict(data: LoadInput):
     prediction = model.predict(input_data)
     # Assuming model.predict returns [[Y1, Y2]]
     return {"Y1": float(prediction[0][0]), "Y2": float(prediction[0][1])}
+import os
+import uvicorn
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))  # Use Azure assigned port
+    uvicorn.run("app:app", host="0.0.0.0", port=port, log_level="info")
 
